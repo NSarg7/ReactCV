@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ReactCV/static/css/main.1b4d0c17.chunk.css",
+    "main.js": "/ReactCV/static/js/main.aec47183.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.aec47183.chunk.js.map",
+    "runtime-main.js": "/ReactCV/static/js/runtime-main.5227be6d.js",
+    "runtime-main.js.map": "/ReactCV/static/js/runtime-main.5227be6d.js.map",
+    "static/js/2.8d1aeece.chunk.js": "/ReactCV/static/js/2.8d1aeece.chunk.js",
+    "static/js/2.8d1aeece.chunk.js.map": "/ReactCV/static/js/2.8d1aeece.chunk.js.map",
+    "index.html": "/ReactCV/index.html",
+    "precache-manifest.6651e79c4dd16e2c30306e0f3aa9e5a4.js": "/ReactCV/precache-manifest.6651e79c4dd16e2c30306e0f3aa9e5a4.js",
+    "service-worker.js": "/ReactCV/service-worker.js",
+    "static/css/main.1b4d0c17.chunk.css.map": "/ReactCV/static/css/main.1b4d0c17.chunk.css.map",
+    "static/media/main.scss": "/ReactCV/static/media/back.9c775351.jpg",
+    "static/media/budgety.png": "/ReactCV/static/media/budgety.8e806411.png",
+    "static/media/favicon.png": "/ReactCV/static/media/favicon.62459fb8.png",
+    "static/media/forkify.png": "/ReactCV/static/media/forkify.3ac8e946.png",
+    "static/media/natours.png": "/ReactCV/static/media/natours.a797f42a.png",
+    "static/media/omnifood.png": "/ReactCV/static/media/omnifood.e5d3fa39.png",
+    "static/media/pig game.png": "/ReactCV/static/media/pig game.dcf84480.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5227be6d.js",
+    "static/js/2.8d1aeece.chunk.js",
+    "static/css/main.1b4d0c17.chunk.css",
+    "static/js/main.aec47183.chunk.js"
+  ]
+}

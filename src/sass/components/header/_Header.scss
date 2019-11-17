@@ -1,0 +1,15 @@
+.title {
+    margin-bottom: 3.5rem;
+    width: 60vw;
+
+    &_bottom{
+        margin: auto;
+        display: block;
+        width: 100%;
+
+        &--span {
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+}

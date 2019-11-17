@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b8359e7dc768ae2f8a8ff563d0561460",
+    "revision": "c53fceb43fdc7b187bcfff3cb4fa7fd2",
     "url": "/ReactCV/index.html"
   },
   {
-    "revision": "13c23a23e396c6358569",
+    "revision": "d06ec7856698d22aa003",
     "url": "/ReactCV/static/css/main.ae11e72e.chunk.css"
   },
   {
-    "revision": "90b392c43f9f756f839d",
-    "url": "/ReactCV/static/js/2.9b335fbf.chunk.js"
+    "revision": "6a36ab022becef975e75",
+    "url": "/ReactCV/static/js/2.ba5d0517.chunk.js"
   },
   {
-    "revision": "13c23a23e396c6358569",
-    "url": "/ReactCV/static/js/main.fe61bfff.chunk.js"
+    "revision": "d06ec7856698d22aa003",
+    "url": "/ReactCV/static/js/main.5e927c73.chunk.js"
   },
   {
     "revision": "6629d28d603eaa4c8081",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e8064118de04ff0ea2b7a47f03b6a03",
     "url": "/ReactCV/static/media/budgety.8e806411.png"
-  },
-  {
-    "revision": "62459fb8c067b595b751d6146f494ec2",
-    "url": "/ReactCV/static/media/favicon.62459fb8.png"
   },
   {
     "revision": "3ac8e9460900484577105e0fa052205a",

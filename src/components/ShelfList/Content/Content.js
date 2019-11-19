@@ -1,15 +1,17 @@
 import React from "react";
 
-const content = props => {
+const content = ({link, img, name, text}) => {
 
   return (
+    <div className="Content_container">
     <div className="Content">
-      <a target="_blank" rel="noopener noreferrer" href={props.link} className="pic">
-        <img src={props.img}
-          alt={`Project ${props.name}`} />
+      <a target="_blank" rel="noopener noreferrer" href={link} className="pic">
+        <img src={img}
+          alt={`Project ${name}`} />
       </a>
       <div className="text">
-        <p className="inline-text">{props.text}</p>
+        <p className="inline-text">{text}</p>
+      </div>
       </div>
     </div>
   )

@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.bc643490.chunk.css",
-    "main.js": "/ReactCV/static/js/main.bcdc978d.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.bcdc978d.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.a808a580.chunk.css",
+    "main.js": "/ReactCV/static/js/main.7d84e41f.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.7d84e41f.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.5227be6d.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.5227be6d.js.map",
     "static/js/2.ba5d0517.chunk.js": "/ReactCV/static/js/2.ba5d0517.chunk.js",
     "static/js/2.ba5d0517.chunk.js.map": "/ReactCV/static/js/2.ba5d0517.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.4241f5dfd6292710400d4d12e9459bf8.js": "/ReactCV/precache-manifest.4241f5dfd6292710400d4d12e9459bf8.js",
+    "precache-manifest.405f4e3d3de7ccd6580a9839b03ff71c.js": "/ReactCV/precache-manifest.405f4e3d3de7ccd6580a9839b03ff71c.js",
     "service-worker.js": "/ReactCV/service-worker.js",
-    "static/css/main.bc643490.chunk.css.map": "/ReactCV/static/css/main.bc643490.chunk.css.map",
+    "static/css/main.a808a580.chunk.css.map": "/ReactCV/static/css/main.a808a580.chunk.css.map",
+    "static/media/React-icon.svg": "/ReactCV/static/media/React-icon.05a3e30f.svg",
     "static/media/main.scss": "/ReactCV/static/media/back.b704745a.jpg",
-    "static/media/budgety.png": "/ReactCV/static/media/budgety.8e806411.png",
-    "static/media/forkify.png": "/ReactCV/static/media/forkify.3ac8e946.png",
-    "static/media/natours.png": "/ReactCV/static/media/natours.a797f42a.png",
-    "static/media/omnifood.png": "/ReactCV/static/media/omnifood.e5d3fa39.png",
-    "static/media/pig game.png": "/ReactCV/static/media/pig game.dcf84480.png"
+    "static/media/budgety.jpg": "/ReactCV/static/media/budgety.e24cea67.jpg",
+    "static/media/forkify.jpg": "/ReactCV/static/media/forkify.953abb96.jpg",
+    "static/media/natours.jpg": "/ReactCV/static/media/natours.9716c596.jpg",
+    "static/media/omnifood.jpg": "/ReactCV/static/media/omnifood.5fc64ef4.jpg",
+    "static/media/pig game.jpg": "/ReactCV/static/media/pig game.1a7b63df.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5227be6d.js",
     "static/js/2.ba5d0517.chunk.js",
-    "static/css/main.bc643490.chunk.css",
-    "static/js/main.bcdc978d.chunk.js"
+    "static/css/main.a808a580.chunk.css",
+    "static/js/main.7d84e41f.chunk.js"
   ]
 }

@@ -4,8 +4,9 @@ const content = props => {
 
   return (
     <div className="Content">
-      <a target="_blank" href={`${props.name}/index.html`} className="pic">
-        <img src={require(`../../../assets/img/${props.name.toLowerCase()}.png`)} alt={`Project ${props.name}`} />
+      <a target="_blank" rel="noopener noreferrer" href={props.link} className="pic">
+        <img src={props.img}
+          alt={`Project ${props.name}`} />
       </a>
       <div className="text">
         <p className="inline-text">{props.text}</p>

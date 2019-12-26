@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79bfc386da6df4d3d442dfb1126031a6",
+    "revision": "eb18448c8ce0124aa641ba078ac6504e",
     "url": "/ReactCV/index.html"
   },
   {
-    "revision": "3452e5252aafe4fba3c5",
+    "revision": "c4cec84c8efb256233e8",
     "url": "/ReactCV/static/css/main.a27d9b68.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/js/2.862428f1.chunk.js"
   },
   {
-    "revision": "3452e5252aafe4fba3c5",
-    "url": "/ReactCV/static/js/main.244eca8d.chunk.js"
+    "revision": "c4cec84c8efb256233e8",
+    "url": "/ReactCV/static/js/main.2b00a3dd.chunk.js"
   },
   {
     "revision": "6629d28d603eaa4c8081",
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e24cea6784726c152517839ba5b6432f",
     "url": "/ReactCV/static/media/budgety.e24cea67.jpg"
-  },
-  {
-    "revision": "953abb961c8461764e34a1386ab82fae",
-    "url": "/ReactCV/static/media/forkify.953abb96.jpg"
   },
   {
     "revision": "9716c596c914c2ef60debf03fd61f6a9",

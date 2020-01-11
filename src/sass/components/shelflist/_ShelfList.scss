@@ -1,4 +1,9 @@
 .ShelfList {
     width: 70%;
     padding: 10px;
+
+    -ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }

@@ -1,29 +1,29 @@
 @keyframes displayBlock {
-    0% {
-        opacity: 0;
-    }
+	// 0% {
+	// 	opacity: 0;
+	// }
 
-    100% {
-        opacity: 1;
-    }
+	// 100% {
+	// 	opacity: 1;
+	// }
 }
 
 @keyframes slide-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-    }
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
-@mixin colorGradient ($fontWeight) {
-    display: inline-block;
-    background-image: linear-gradient(to right bottom, #FDC830, #F37335);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: $fontWeight;
+@mixin colorGradient($fontWeight) {
+	display: inline-block;
+	background-image: linear-gradient(to right bottom, #fdc830, #f37335);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: $fontWeight;
 }

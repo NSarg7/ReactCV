@@ -1,33 +1,39 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 html,
 body {
-
-  text-rendering: optimizeLegibility;
-  color: #fff;
-  overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	color: #fff;
+	overflow-x: hidden;
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.63)),
-    url(../../assets/img/back.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: auto;
-  font-family: "Lato", "Verdana", sans-serif;
-  background-position: center;
-  background-size: cover;
-  font-weight: 300;
-  font-size: 1.6rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.637), rgba(0, 0, 0, 0.63)),
+		url(../../assets/img/back.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: auto;
+	font-family: "Lato", "Verdana", sans-serif;
+	background-position: center;
+	background-size: cover;
+	font-weight: 300;
+	font-size: 1.6rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+  }
+  
+  user-select: none;
 }

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.597dd67f.chunk.css",
-    "main.js": "/ReactCV/static/js/main.3aae7c88.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.3aae7c88.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.65520256.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.65520256.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.5227be6d.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.5227be6d.js.map",
     "static/js/2.c1040d53.chunk.js": "/ReactCV/static/js/2.c1040d53.chunk.js",
     "static/js/2.c1040d53.chunk.js.map": "/ReactCV/static/js/2.c1040d53.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.71a8d4021e7f983f5ef03972d7b8769d.js": "/ReactCV/precache-manifest.71a8d4021e7f983f5ef03972d7b8769d.js",
+    "precache-manifest.16255b968f78e71556b1f983a57e8a7b.js": "/ReactCV/precache-manifest.16255b968f78e71556b1f983a57e8a7b.js",
     "service-worker.js": "/ReactCV/service-worker.js",
     "static/css/main.597dd67f.chunk.css.map": "/ReactCV/static/css/main.597dd67f.chunk.css.map",
     "static/media/15puzzle.jpg": "/ReactCV/static/media/15puzzle.7eaf04c4.jpg",
@@ -24,6 +24,6 @@
     "static/js/runtime-main.5227be6d.js",
     "static/js/2.c1040d53.chunk.js",
     "static/css/main.597dd67f.chunk.css",
-    "static/js/main.3aae7c88.chunk.js"
+    "static/js/main.65520256.chunk.js"
   ]
 }

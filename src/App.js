@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Header from "../components/Header/Header";
-import ShelfList from "../components/ShelfList/ShelfList";
-import PoweredBy from "../components/Info/PoweredBy";
+import Header from "./components/Header/Header";
+import ShelfList from "./components/ShelfList/ShelfList";
+import PoweredBy from "./components/Info/PoweredBy";
 import data from "./data";
 
 const App = () => {
-	const [state, setstate] = useState(data);
+	const [state, setState] = useState(data);
 
 	const showContent = id => {
 		//Find project's index
@@ -23,7 +23,7 @@ const App = () => {
 			});
 			projects[projectIndex].doesShow = doesShow;
 		}
-		setstate({ projects: projects });
+		setState({ projects: projects });
 	};
 
 	return (

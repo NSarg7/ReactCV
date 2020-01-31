@@ -1,0 +1,14 @@
+.App {
+	height: 100vh;
+	width: auto;
+	// linear-gradient(120deg, rgba(143, 143, 143, 0.102) 10%, rgba(0, 0, 0, 0.822)),
+	background-image: url(../assets/back.jpg);
+	background-size: cover;
+	background-position: left;
+	transition: 2s;
+	backface-visibility: hidden;
+
+	&:hover {
+		transform: scale3d(2.5, 2.5, 1) translateX(50rem);
+	}
+}

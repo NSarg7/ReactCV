@@ -1,8 +1,10 @@
 @import "../sass/abstracts/mixins";
+@import "../sass/abstracts/animations";
+@import "../sass/base/reset";
 
 @import "../sass/base/base";
 @import "../sass/base/typography";
 @import "../sass/base/App";
 
 @import "./components/ProjectWall/ProjectWall";
-@import "./components/ProjectItem/ProejectItem";
+@import "./components/CustomIcon/CustomIcon";

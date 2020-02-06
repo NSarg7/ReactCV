@@ -1,13 +1,13 @@
 .App {
 	height: 100vh;
 	width: 100vw;
-	backface-visibility: hidden;
+	background-image: url(../assets/workbench/back.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	display: inline-grid;
+	grid-template-rows: 8rem auto;
+	justify-content: center;
 
-	// &:hover {
-	// 	transform: scale3d(1.5, 1.5, 1);
-	// }
-
-	.slick-dots{
-		color: white;
-	}
+	
 }

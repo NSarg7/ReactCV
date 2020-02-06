@@ -1,11 +1,12 @@
 import React from "react";
-import {StyledIcon} from './CustomIcon.styled'
 
 const CustomIcon = ({ Styles, name, ...otherProps }) => {
+const classes = ['CustomIcon', Styles]
+
 	return (
-		<StyledIcon className={Styles} {...otherProps}>
+		<div className={classes.join(' ')} {...otherProps}>
 			<ion-icon name={name} />
-		</StyledIcon>
+		</div>
 	);
 };
 

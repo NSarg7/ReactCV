@@ -1,10 +1,18 @@
+@import "../sass/abstracts/variables";
 @import "../sass/abstracts/mixins";
 @import "../sass/abstracts/animations";
 @import "../sass/base/reset";
 
+//BASE
 @import "../sass/base/base";
 @import "../sass/base/typography";
 @import "../sass/base/App";
 
+// CONTAINERS
+@import "../sass/layout/MainContainer";
+@import "../sass/layout/Header";
+
+// COMPONENTS
 @import "./components/ProjectWall/ProjectWall";
 @import "./components/CustomIcon/CustomIcon";
+@import "./components/Slider/Slider";

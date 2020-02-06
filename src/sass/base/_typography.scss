@@ -8,9 +8,10 @@ body {
 
 h1 {
 	@include colorGradient(400);
-	font-size: 6rem;
+	font-size: 4rem;
 	font-weight: 400;
-	margin-top: 2rem 0;
+	margin: 2rem 0;
+	text-align: center;
 }
 
 h2 {
@@ -18,12 +19,3 @@ h2 {
 	font-weight: 300;
 }
 
-ion-icon {
-	//FOR CUSTOM ICONS
-
-	&[name="arrow-forward"],
-	&[name="arrow-back"] {
-
-		color: red;
-	}
-}

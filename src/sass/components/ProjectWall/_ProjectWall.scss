@@ -1,46 +1,35 @@
 .ProjectWall {
+	position: relative;
 	height: 100%;
-	background-image: url(../../assets/workbench/back.png);
-	background-size: cover;
-	background-position: center;
-	@include flexCenter;
 	transition: 2s;
+	display: inline-grid;
+	grid-template-rows: 1fr 65rem;
 
-	&_slider {
-		position: relative;
-		height: 40rem;
-		width: 82rem;
-		padding: 1.1rem;
-		background-image: url(../../assets/workbench/frame-perspective.png);
-		background-size: cover;
-		background-position: center;
-		backface-visibility: hidden;
-
-		&--box {
-			height: 100%;
-			width: 100%;
-			overflow: hidden;
-			@include flexCenter;
-		}
+	&__title {
+		// align-self: center;
 	}
 
-	&_man {
-		position: fixed;
+	&__man {
+		position: absolute;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
 		height: 50%;
 		width: auto;
 		transition: 1s;
+		// display: none; //!
 	}
 
 	&:hover {
-		transform: scale3d(1.3, 1.3, 1);
-		.ProjectWall_man {
+		transform: scale3d(1.5, 1.5, 1);
+
+		.ProjectWall__title {
 			opacity: 0;
+			visibility: hidden;
+		}
+		.ProjectWall__man {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}
 }
-
-
-

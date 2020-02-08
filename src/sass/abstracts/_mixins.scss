@@ -1,9 +1,7 @@
-
-@mixin colorGradient($fontWeight) {
-	background-image: linear-gradient(to right bottom, #fdc830, #f37335);
+@mixin colorGradient($color-gradient) {
+	background-image: $color-gradient;
 	-webkit-background-clip: text;
 	color: transparent;
-	font-weight: $fontWeight;
 }
 
 
@@ -38,7 +36,6 @@
 	justify-content: flex-start;
 	align-items: center;
 }
-
 
 /////////////////////////////
 
@@ -81,7 +78,6 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
 
 @mixin absoluteCenter {
 	position: absolute;

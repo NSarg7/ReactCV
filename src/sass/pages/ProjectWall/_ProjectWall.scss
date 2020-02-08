@@ -1,0 +1,39 @@
+.ProjectWall {
+	position: relative;
+	height: 100%;
+	display: inline-grid;
+	grid-template-rows: 1fr 65rem;
+	justify-items: center;
+
+	&__title {
+		animation-duration: $start-animation-duration-2;
+		opacity: 0;
+	}
+
+	&__description {
+		width: 60%;
+		margin: 0 auto;
+		opacity: 0;
+		animation-delay: $animation-delay-1;
+		animation-duration: $start-animation-duration-2;
+	}
+
+	&__man {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 50%;
+		width: auto;
+		transition: 1s;
+		// display: none; //!
+		animation: hideMan 1.5s ease forwards;
+		animation-delay: $animation-delay-3;
+		@keyframes hideMan {
+			100% {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+}

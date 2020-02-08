@@ -1,3 +1,5 @@
+@import "./css-components/buttons.scss";
+// ABSTRACTS
 @import "../sass/abstracts/variables";
 @import "../sass/abstracts/mixins";
 @import "../sass/abstracts/animations";
@@ -8,11 +10,15 @@
 @import "../sass/base/typography";
 @import "../sass/base/App";
 
-// CONTAINERS
-@import "../sass/layout/MainContainer";
-@import "../sass/layout/Header";
+// LAYOUT
+@import "../sass/layout/MainContainer/MainContainer";
+@import "../sass/layout/Header/Header";
+
+// PAGES
+@import "./pages/ProjectWall/ProjectWall";
+@import "./pages/Homepage/HomePage.scss";
+@import "./pages/About/About.scss";
 
 // COMPONENTS
-@import "./components/ProjectWall/ProjectWall";
 @import "./components/CustomIcon/CustomIcon";
 @import "./components/Slider/Slider";

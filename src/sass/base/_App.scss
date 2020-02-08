@@ -4,9 +4,9 @@
 	background-image: url(../assets/workbench/back.jpg);
 	background-size: cover;
 	background-position: center;
-	overflow: hidden;
-	display: inline-grid;
-	grid-template-rows: 8rem auto;
+	// overflow: hidden; //!
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 
 	

@@ -6,6 +6,15 @@
 	background-image: url(../../assets/workbench/frame-perspective.png);
 	background-size: cover;
 	background-position: center;
+	animation: scaleIn 2s ease forwards;
+	animation-delay: $animation-delay-3;
+	backface-visibility: hidden;
+
+	@keyframes scaleIn {
+		100% {
+			transform: scale(1.15) translateY(2rem);
+		}
+	}
 
 	&__btn-prev,
 	&__btn-next {

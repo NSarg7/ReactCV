@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
 
 const isHidden = css`
 	opacity: 0;
@@ -23,33 +22,11 @@ export const LinkContainer = styled.div`
 	animation-duration: 1.5s;
 `;
 
-export const StyledLink = styled(Link)`
-	&,
-	&:link,
-	&:visited {
-		display: inline-block;
-		border: 1px solid #f37335;
-		padding: 1rem 2rem;
-		border-radius: 5px;
-		transition: 0.3s;
-	}
-
-	&:hover {
-		background-color: rgba(255, 255, 255, 0.4);
-		border: 1px solid #000;
-	}
-
-	&:active,
-	&:focus {
-		border: 1px solid #f28c38;
-	}
-`;
 
 export const Header = styled.div((props) => {
 	const { isFinished } = props;
 	return `
-	width:100%;
-	flex: ${isFinished ? "10" : "0"};
+	flex: ${isFinished ? "10" : "0"} 0;
 	display: flex;
 	flex-direction:column;
 	justify-content:center;

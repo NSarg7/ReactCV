@@ -1,0 +1,35 @@
+@import "./abstracts/variables";
+@import "./abstracts/animations";
+@import "./abstracts/mixins";
+
+@media only screen and (max-width: 1200px) {
+	html {
+		font-size: 56%;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	html {
+		font-size: 42%;
+	}
+	.MainContainer{
+		margin-top: 3rem;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	html {
+		font-size: 35%;
+	}
+
+	* {
+		cursor: default;
+	}
+}
+
+//! Phone
+
+@media only screen and (max-width: 480px) {
+	html {
+		font-size: 25%;
+	}
+}

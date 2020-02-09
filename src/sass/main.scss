@@ -1,10 +1,10 @@
-@import "./css-components/buttons.scss";
 // ABSTRACTS
 @import "../sass/abstracts/variables";
 @import "../sass/abstracts/mixins";
 @import "../sass/abstracts/animations";
 @import "../sass/base/reset";
 
+@import "./css-components/buttons";
 //BASE
 @import "../sass/base/base";
 @import "../sass/base/typography";

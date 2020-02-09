@@ -17,17 +17,19 @@ h2 {
 h1 {
 	@include colorGradient($color-gradient-1);
 	font-size: 4rem;
-	margin: 1.5rem 0;
+	margin: 1.5rem auto;
+	
 }
 
 h2 {
 	@include colorGradient($color-gradient-2);
 	font-size: 2.5rem;
-	margin: 1rem 0;
+	margin: 1rem auto;
 }
 
 .title {
-
+	@include flexColumnCenter;
+	width: 100%;
 	&::after {
 		content: "";
 		display: block;

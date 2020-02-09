@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "26cab7c966022a87a64d991d791a30e7",
+    "revision": "f9ed48b0042e4a4745d5a66c4f2537bc",
     "url": "/ReactCV/index.html"
   },
   {
-    "revision": "c5e302164a22f4ed8241",
-    "url": "/ReactCV/static/css/main.ecfbbff5.chunk.css"
+    "revision": "61de9d4a80600f79d4e5",
+    "url": "/ReactCV/static/css/main.598b1035.chunk.css"
   },
   {
     "revision": "8e9d1b88b354debe5f4c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/js/2.428e0d53.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c5e302164a22f4ed8241",
-    "url": "/ReactCV/static/js/main.d60bae29.chunk.js"
+    "revision": "61de9d4a80600f79d4e5",
+    "url": "/ReactCV/static/js/main.28011414.chunk.js"
   },
   {
     "revision": "fc8d51ed7847afbc570a",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6364412322b2c6f890fdbf2d6e5ffcc9",
     "url": "/ReactCV/static/media/back.63644123.jpg"
+  },
+  {
+    "revision": "14be7616549703775c84cd0ad464bbfe",
+    "url": "/ReactCV/static/media/engraved-back.14be7616.png"
   },
   {
     "revision": "86de7606984fa8b9ae137ed5c2faf314",

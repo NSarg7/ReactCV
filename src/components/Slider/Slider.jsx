@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import CustomIcon from "../CustomIcon/CustomIcon";
 
-import { SliderOverlay, SliderContainer } from './Slider.styled';
+import { SliderOverlay, SliderContainer } from "./Slider.styled";
 
 const Slider = ({ children, transition }) => {
 	const sliderContainerRef = useRef(null);
@@ -12,13 +12,26 @@ const Slider = ({ children, transition }) => {
 	const [transitionTime, setTransitionTime] = useState(transition);
 	const [clickIsActive, setClickIsActive] = useState(true);
 
-	useEffect(() => {
-		var sliderContainerDOM = sliderContainerRef.current;
-		const sliderContainerDOMWidth = getComputedStyle(sliderContainerDOM).getPropertyValue(
-			"width"
-		);
+	const [touchStartClient, setTouchStartClient] = useState();
+	const [curTouchPosition, setCurTouchPosition] = useState();
 
-		setSlideWidth(parseFloat(sliderContainerDOMWidth));
+	useEffect(() => {
+		let sliderContainerDOM = sliderContainerRef.current;
+
+		const handleSize = () => {
+			let sliderContainerDOMWidth = getComputedStyle(sliderContainerDOM).getPropertyValue(
+				"width"
+			);
+			setSlideWidth(parseFloat(sliderContainerDOMWidth));
+			setSliderPosition(0);
+			setCount(0);
+		};
+
+		window.addEventListener("resize", handleSize);
+		handleSize();
+		return () => {
+			window.removeEventListener("resize", handleSize);
+		};
 	}, [slideWidth, transition]);
 
 	const btnPrev = () => {
@@ -48,8 +61,28 @@ const Slider = ({ children, transition }) => {
 		setClickIsActive(true);
 	};
 
+	const touchMove = (event) => {
+		setTouchStartClient(event.touches[0].clientX);
+	};
+
+	const touchStart = (event) => {
+		setCurTouchPosition(event.touches[0].clientX);
+	};
+
+	const touchEnd = () => {
+		if (touchStartClient < curTouchPosition) {
+			btnNext();
+		} else {
+			btnPrev();
+		}
+	};
+
 	return (
-		<div className='Slider'>
+		<div
+			className='Slider'
+			onTouchStart={touchStart}
+			onTouchEnd={touchEnd}
+			onTouchMove={touchMove}>
 			<SliderOverlay>
 				<CustomIcon Styles='Slider__btn-prev' name='ios-arrow-back' onClick={btnPrev} />
 				<SliderContainer

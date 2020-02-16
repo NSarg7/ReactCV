@@ -1,6 +1,7 @@
 // ABSTRACTS
 @import "../sass/abstracts/variables";
 @import "../sass/abstracts/mixins";
+@import "../sass/abstracts/_utilities";
 @import "../sass/abstracts/animations";
 @import "../sass/base/reset";
 
@@ -16,8 +17,8 @@
 
 // PAGES
 @import "./pages/ProjectWall/ProjectWall";
-@import "./pages/Homepage/HomePage.scss";
-@import "./pages/About/About.scss";
+@import "./pages/Homepage/HomePage";
+@import "./pages/About/About";
 
 // COMPONENTS
 @import "./components/CustomIcon/CustomIcon";

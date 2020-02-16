@@ -11,7 +11,7 @@ export const SliderOverlay = styled.div`
 `;
 
 export const SliderContainer = styled.div((props) => {
-	const { sliderPosition, transitionTime } = props;
+	const { sliderPosition, transitionTime} = props;
 
 	return `
 	height: 100%;

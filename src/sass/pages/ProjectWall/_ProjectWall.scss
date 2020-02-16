@@ -26,6 +26,20 @@
 		animation-duration: $start-animation-duration-2;
 	}
 
+	&__engraving {
+		filter: grayscale(0.7);
+		opacity: 0.1;
+		z-index: -1;
+		position: absolute;
+		bottom: 22%;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 25rem;
+		width: auto;
+		visibility: hidden;
+		
+	}
+
 	&__man {
 		position: absolute;
 		bottom: 0;

@@ -4,32 +4,68 @@
 
 @media only screen and (max-width: 1200px) {
 	html {
-		font-size: 56%;
-	}
-}
-@media only screen and (max-width: 1023px) {
-	html {
-		font-size: 42%;
-	}
-	.MainContainer{
-		margin-top: 3rem;
+		font-size: 58%;
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 900px) {
 	html {
-		font-size: 35%;
+		font-size: 42%;
+	}
+
+	.ProjectWall {
+		&__description {
+			margin-bottom: 2rem;
+			width: 90%;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	html {
+		font-size: 30%;
 	}
 
 	* {
 		cursor: default;
+		outline: none;
 	}
-}
 
-//! Phone
+	.Header {
+		&__main {
+			.main-nav {
+				margin-right: 3rem;
+			}
+		}
+	}
 
-@media only screen and (max-width: 480px) {
-	html {
-		font-size: 25%;
+	.MainContainer {
+		width: 98%;
+	}
+
+	.ProjectWall {
+		&__engraving {
+			visibility: visible;
+		}
+	}
+
+	.title::after {
+		margin: 3.5rem;
+	}
+
+	.Slider {
+		height: 37rem;
+		width: 76rem;
+
+		&__btn-prev,
+		&__btn-next {
+			display: none;
+		}
+	}
+
+	@keyframes scaleIn {
+		100% {
+			transform: scale(1) translateY(1.5rem);
+		}
 	}
 }

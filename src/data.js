@@ -3,21 +3,11 @@ import uniqid from "uniqid";
 const projects = [
 	{
 		id: uniqid(),
-		name: "Persons Manager",
-		text:
-			"Persons Manager(PM) will help you manage people information easily. This version of app adopted for medical sphere. For more information please click on project picture.",
-		img: require(`./sass/assets/project-pics/PM.jpg`),
-		link: "https://nsarg7.github.io/PersonsManager/",
+		name: "Natours",
+		text: "My next HTML/CSS project to master CSS3, Sass, Flexbox and grid.(ongoing)",
+		img: require(`./sass/assets/project-pics/natours.jpg`),
+		link: "https://nsarg7.github.io/Natours/",
 	},
-	{
-		id: uniqid(),
-		name: "15Puzzle",
-		text:
-			"15Puzzle - My next project, created by React.js. It's a very popular logic game. Maybe you played it in your childhood. Let's play again and feel nostalgic.",
-		img: require(`./sass/assets/project-pics/15Puzzle.jpg`),
-		link: "https://nsarg7.github.io/15Puzzle/",
-	},
-
 	{
 		id: uniqid(),
 		name: "Omnifood",
@@ -28,10 +18,19 @@ const projects = [
 	},
 	{
 		id: uniqid(),
-		name: "Natours",
-		text: "My next HTML/CSS project to master CSS3, Sass, Flexbox and grid.(ongoing)",
-		img: require(`./sass/assets/project-pics/natours.jpg`),
-		link: "https://nsarg7.github.io/Natours/",
+		name: "15Puzzle",
+		text:
+			"15Puzzle - My next project, created by React.js. It's a very popular logic game. Maybe you played it in your childhood. Let's play again and feel nostalgic.",
+		img: require(`./sass/assets/project-pics/15Puzzle.jpg`),
+		link: "https://nsarg7.github.io/15Puzzle/",
+	},
+	{
+		id: uniqid(),
+		name: "Persons Manager",
+		text:
+			"Persons Manager(PM) will help you manage people information easily. This version of app adopted for medical sphere. For more information please click on project picture.",
+		img: require(`./sass/assets/project-pics/PM.jpg`),
+		link: "https://nsarg7.github.io/PersonsManager/",
 	},
 
 	// {

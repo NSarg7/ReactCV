@@ -34,6 +34,11 @@ const ProjectWall = () => {
 				})}
 			</Slider>
 			<img className='ProjectWall__man' src={require("../../sass/assets/man.png")} alt='man' />
+			<img
+				className='ProjectWall__engraving'
+				src={require("../../sass/assets/engraved-back.png")}
+				alt='statue'
+			/>
 		</div>
 	);
 };

@@ -1,11 +1,16 @@
 .Header {
 	@include flexCenter;
 	flex: 0 0 8rem;
+	margin-bottom: 1rem;
+	// background-color: rgba(0, 0, 0, 0.075);
+	// box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+
 	&__main {
 		width: $main-width;
 		height: 8rem;
 		display: inline-grid;
 		.main-nav {
+			
 			display: flex;
 			align-self: center;
 			justify-self: end;

@@ -1,0 +1,50 @@
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.fadeIn {
+	animation: fadeIn 1.5s ease 1s forwards;
+}
+
+@keyframes imageScale {
+	0% {
+		transform: scale(1.1);
+	}
+	// 50% {
+	// 	transform: scale(1.1);
+	// }
+	100% {
+		transform: scale(1);
+	}
+}
+
+.react-logo {
+	background-image: url(../assets/react-icon.svg);
+	background-size: cover;
+	background-position: center;
+	height: 8rem;
+	width: 8rem;
+	animation: infiniteRotate 4s linear forwards infinite;
+}
+
+.logo-container {
+	position: relative;
+	z-index: -1;
+	margin-bottom: 1rem;
+}
+
+@keyframes infiniteRotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

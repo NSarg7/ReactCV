@@ -1,0 +1,19 @@
+.u-flex {
+	display: flex;
+
+	:nth-child(1) {
+		flex: 1 0 8rem;
+   }
+   :nth-child(2) {
+		flex: 5;
+	}
+}
+
+.u-flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.u-margin-bottom-2 {
+	margin-bottom: 2rem;
+}

@@ -1,16 +1,25 @@
-@import '../sass/abstracts/mixins';
+// ABSTRACTS
+@import "../sass/abstracts/variables";
+@import "../sass/abstracts/mixins";
+@import "../sass/abstracts/_utilities";
+@import "../sass/abstracts/animations";
+@import "../sass/base/reset";
 
-@import '../sass/base/reset';
-@import '../sass/base/base';
-@import '../sass/base/typography';
+@import "./css-components/buttons";
+//BASE
+@import "../sass/base/base";
+@import "../sass/base/typography";
+@import "../sass/base/App";
 
-@import './containers/App';
+// LAYOUT
+@import "../sass/layout/MainContainer/MainContainer";
+@import "../sass/layout/Header/Header";
 
-@import '../sass/components/shelflist/ShelfList';
-@import '../sass/components/shelflist/shelf/Shelf';
-@import '../sass/components/shelflist/content/Content.scss';
-@import '../sass/components/Info/Info.scss';
+// PAGES
+@import "./pages/ProjectWall/ProjectWall";
+@import "./pages/Homepage/HomePage";
+@import "./pages/About/About";
 
-@import '../sass/components/Header/Header';
-
-@import './queries.scss';
+// COMPONENTS
+@import "./components/CustomIcon/CustomIcon";
+@import "./components/Slider/Slider";

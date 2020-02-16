@@ -21,7 +21,7 @@ const ProjectWall = () => {
 				</h2>
 			</div>
 
-			<Slider transition={0.7}>
+			<Slider transition={0.5}>
 				{sliderItems.map((project) => {
 					return (
 						<SliderItem

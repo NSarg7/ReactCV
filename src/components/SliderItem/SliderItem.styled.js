@@ -22,4 +22,5 @@ export const ProjectLabel = styled.span`
 	font-size: 2rem;
 	background-image: linear-gradient(to right bottom, #fdc830, #f37335);
 	-webkit-background-clip: text;
+	user-select: none;
 `;

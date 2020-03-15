@@ -16,8 +16,8 @@ const ProjectWall = () => {
 			<div className='ProjectWall__intro'>
 				<h1 className='ProjectWall__title title fadeIn'>Welcome to Sargsyan's gallery</h1>
 				<h2 className='ProjectWall__description fadeIn'>
-					It's a pleasure to introduce you to a small gallery of my projects. I know, it's far
-					away from Art, maybe just a piece of it.
+					It's a pleasure to introduce you to a small gallery of my projects. I know, it's
+					far away from Art, maybe just a piece of it.
 				</h2>
 			</div>
 
@@ -33,10 +33,14 @@ const ProjectWall = () => {
 					);
 				})}
 			</Slider>
-			<img className='ProjectWall__man' src={require("../../sass/assets/man.png")} alt='man' />
+			<img
+				className='ProjectWall__man'
+				src={require("../../assets/man.png")}
+				alt='man'
+			/>
 			<img
 				className='ProjectWall__engraving'
-				src={require("../../sass/assets/engraved-back.png")}
+				src={require("../../assets/engraved-back.png")}
 				alt='statue'
 			/>
 		</div>

@@ -5,10 +5,12 @@ import { SliderOverlay, SliderContainer } from "./Slider.styled";
 
 const Slider = ({ children, transition }) => {
 	const sliderContainerRef = useRef(null);
+	const isOdd = children.length % 2;
 
 	const [count, setCount] = useState(0);
 	const [slideWidth, setSlideWidth] = useState(0);
-	const [sliderPosition, setSliderPosition] = useState(0);
+	const [sliderPositionStart, setSliderPositionStart] = useState(0);
+	const [sliderPosition, setSliderPosition] = useState(isOdd ? slideWidth / 2 : 0);
 	const [transitionTime, setTransitionTime] = useState(transition);
 	const [clickIsActive, setClickIsActive] = useState(true);
 
@@ -23,15 +25,18 @@ const Slider = ({ children, transition }) => {
 
 	useEffect(() => {
 		let sliderContainerDOM = sliderContainerRef.current;
+		const sliderContainerDOMWidthString = getComputedStyle(sliderContainerDOM).getPropertyValue(
+			"width"
+		);
+		let sliderContainerDOMWidth = parseFloat(sliderContainerDOMWidthString);
+		setSliderPositionStart(isOdd ? sliderContainerDOMWidth / 2 : 0);
 
 		const handleSize = () => {
-			let sliderContainerDOMWidth = getComputedStyle(sliderContainerDOM).getPropertyValue(
-				"width"
-			);
-			setSlideWidth(parseFloat(sliderContainerDOMWidth));
+			setSlideWidth(sliderContainerDOMWidth);
 			setTransitionTime(0);
 			setCount(0);
-			setSliderPosition(0);
+			setSliderPosition(isOdd ? sliderContainerDOMWidth / 2 : 0);
+			setSliderPositionStart(isOdd ? sliderContainerDOMWidth / 2 : 0);
 			setTimeout(() => {
 				setTransitionTime(transition);
 			});
@@ -42,7 +47,7 @@ const Slider = ({ children, transition }) => {
 		return () => {
 			window.removeEventListener("resize", handleSize);
 		};
-	}, [slideWidth, transition]);
+	}, [transition, isOdd]);
 
 	const btnPrev = () => {
 		if (!clickIsActive) return;
@@ -61,7 +66,7 @@ const Slider = ({ children, transition }) => {
 	const transitionReset = () => {
 		setTransitionTime(0);
 		setCount(0);
-		setSliderPosition(0);
+		setSliderPosition(sliderPositionStart);
 		setTimeout(() => {
 			setTransitionTime(transition);
 		});
@@ -69,7 +74,9 @@ const Slider = ({ children, transition }) => {
 		setClickIsActive(true);
 	};
 
-	// FOR MOBILE DEVICES
+	/*----------------- FOR MOBILE DEVICES -----------------*/
+
+	// TOUCH EVENTS
 	const touchMove = (event) => {
 		setTouchStartClient(event.touches[0].clientX);
 	};
@@ -90,7 +97,6 @@ const Slider = ({ children, transition }) => {
 		const mouseTranslate = event.clientX - mouseDownClientX;
 		setMouseTranslateSize(mouseTranslate);
 	};
-
 	const mouseDownHandler = (event) => {
 		setTransitionTime(0);
 		setMouseMoveActive(true);
@@ -132,12 +138,16 @@ const Slider = ({ children, transition }) => {
 					ref={sliderContainerRef}
 					slideWidth={slideWidth}
 					onTransitionEnd={
-						Math.abs(count) === 4 ? transitionReset : setClickIsActive.bind(this, true)
+						Math.abs(count) === children.length / 3
+							? transitionReset
+							: setClickIsActive.bind(this, true)
 					}
 					transitionTime={transitionTime}
 					style={{
 						transform: ` translateX(${
-							mouseTranslateSize ? sliderPosition + mouseTranslateSize : sliderPosition
+							mouseTranslateSize
+								? sliderPosition + mouseTranslateSize
+								: sliderPosition
 						}px)`,
 					}}>
 					{children}

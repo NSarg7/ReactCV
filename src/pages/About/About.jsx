@@ -45,15 +45,17 @@ const About = () => {
 					<div className='u-flex u-margin-bottom-2'>
 						<StyledLabel>Education:</StyledLabel>
 						<div>
-							<label>Self-educated with following courses and official documenation/</label>
+							<label>
+								Self-educated with the following courses and official documenation
+							</label>
 							<p>Udemy – “The complete JavaScript course”.</p>
 							<p>Udemy – “Build Responsive Real World Websites with HTML5 and CSS3”.</p>
 							<p>Udemy – “Advanced CSS and Sass: Flexbox, Grid, Animations and More!”.</p>
 							<p>
 								Udemy – “The Complete React Developer in 2019 (w Redux, Hooks, GraphQL)”.
 							</p>
-							<label>Also waste my time in</label>
-							<p>YSU, “Bachelor's degree of International Relations”.</p>
+							<label>Also, waste my time in</label>
+							<p>YSU, “Bachelor's degree in International Relations”.</p>
 						</div>
 					</div>
 					<div className='u-flex u-margin-bottom-2'>
@@ -89,10 +91,10 @@ const About = () => {
 						<StyledLabel>About me:</StyledLabel>
 						<div>
 							<p>
-								Nobody has ready-made solutions. I am not an exception. But I am
-								learning a lot and doing my best to have an ability to find solutions as
-								fast as possible.I think this is a hallmark of a good programmer. I would be
-								very happy to prove my words with work. I am open for any new tasks and
+								Nobody has ready-made solutions. I am not an exception. But I am learning a
+								lot and doing my best to have the ability to find solutions as fast as
+								possible. I think this is a hallmark of a good programmer. I would be very
+								happy to prove my words with work. I am open to any new tasks and
 								challenges.
 							</p>
 						</div>

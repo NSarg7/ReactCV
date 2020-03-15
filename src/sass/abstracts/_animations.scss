@@ -26,7 +26,7 @@
 }
 
 .react-logo {
-	background-image: url(../assets/react-icon.svg);
+	background-image: url(../../assets/react-icon.svg);
 	background-size: cover;
 	background-position: center;
 	height: 8rem;
@@ -46,5 +46,16 @@
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+// FOR CHILDREN OF MAIN CONTAINER
+@keyframes AnimatedContent {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
 	}
 }

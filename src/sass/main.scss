@@ -12,14 +12,14 @@
 @import "../sass/base/App";
 
 // LAYOUT
-@import "../sass/layout/MainContainer/MainContainer";
-@import "../sass/layout/Header/Header";
+@import "../layout/MainContainer/MainContainer";
+@import "../layout/Header/Header";
 
 // PAGES
-@import "./pages/ProjectWall/ProjectWall";
-@import "./pages/Homepage/HomePage";
-@import "./pages/About/About";
+@import "../pages/ProjectWall/ProjectWall";
+@import "../pages/Homepage/HomePage";
+@import "../pages/About/About";
 
 // COMPONENTS
-@import "./components/CustomIcon/CustomIcon";
-@import "./components/Slider/Slider";
+@import "../components/CustomIcon/CustomIcon";
+@import "../components/Slider/Slider";

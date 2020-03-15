@@ -20,6 +20,7 @@ export const SliderContainer = styled.div((props) => {
 	justify-content: center;
 	transition: ${transitionTime}s;
 	transition-timing-function: linear;
+	transform: translateX(-50%);
 
 	`;
 });

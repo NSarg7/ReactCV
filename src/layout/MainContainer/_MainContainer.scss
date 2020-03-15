@@ -1,0 +1,20 @@
+.MainContainer {
+	width: $main-width;
+	flex: 1;
+	align-self: center;
+	display: flex;
+	overflow: hidden;
+
+	//Hide scrollbar
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	scrollbar-width: none;
+
+	& > div {
+		flex: 1 0;
+		animation: AnimatedContent 3s ease forwards;
+	}
+	
+}

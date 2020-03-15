@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.a5f63c6c.chunk.css",
-    "main.js": "/ReactCV/static/js/main.65a6a458.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.65a6a458.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.13b68065.chunk.css",
+    "main.js": "/ReactCV/static/js/main.54ad2968.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.54ad2968.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.d22b4e63.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.d22b4e63.js.map",
     "static/js/2.78afab49.chunk.js": "/ReactCV/static/js/2.78afab49.chunk.js",
     "static/js/2.78afab49.chunk.js.map": "/ReactCV/static/js/2.78afab49.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.b144c3c859834e888edd90515f9e90ee.js": "/ReactCV/precache-manifest.b144c3c859834e888edd90515f9e90ee.js",
+    "precache-manifest.2d42e7f459ee8254e865265b184f9189.js": "/ReactCV/precache-manifest.2d42e7f459ee8254e865265b184f9189.js",
     "service-worker.js": "/ReactCV/service-worker.js",
-    "static/css/main.a5f63c6c.chunk.css.map": "/ReactCV/static/css/main.a5f63c6c.chunk.css.map",
+    "static/css/main.13b68065.chunk.css.map": "/ReactCV/static/css/main.13b68065.chunk.css.map",
     "static/js/2.78afab49.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.78afab49.chunk.js.LICENSE.txt",
     "static/media/15Puzzle.jpg": "/ReactCV/static/media/15Puzzle.1258fb8f.jpg",
     "static/media/PM.jpg": "/ReactCV/static/media/PM.1c0d81fd.jpg",
+    "static/media/Shopify.jpg": "/ReactCV/static/media/Shopify.a3aa461c.jpg",
     "static/media/adam.jpg": "/ReactCV/static/media/adam.0522e954.jpg",
     "static/media/main.scss": "/ReactCV/static/media/frame-perspective.86de7606.png",
+    "static/media/checkmate-checker.jpg": "/ReactCV/static/media/checkmate-checker.7c7f05e5.jpg",
     "static/media/engraved-back.png": "/ReactCV/static/media/engraved-back.14be7616.png",
     "static/media/kiss.jpg": "/ReactCV/static/media/kiss.ee94973c.jpg",
     "static/media/man.png": "/ReactCV/static/media/man.d9d5c3ed.png",
@@ -23,7 +25,6 @@
     "static/media/natours.jpg": "/ReactCV/static/media/natours.6454ebd0.jpg",
     "static/media/omnifood.jpg": "/ReactCV/static/media/omnifood.b56180b5.jpg",
     "static/media/main_query.scss": "/ReactCV/static/media/react-icon.05e9a1f4.svg",
-    "static/media/shopify.jpg": "/ReactCV/static/media/shopify.a3aa461c.jpg",
     "static/media/starry.jpg": "/ReactCV/static/media/starry.88d8edda.jpg",
     "static/media/supper.jpg": "/ReactCV/static/media/supper.6338e175.jpg",
     "static/media/venus.jpg": "/ReactCV/static/media/venus.391a2aed.jpg"
@@ -31,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.d22b4e63.js",
     "static/js/2.78afab49.chunk.js",
-    "static/css/main.a5f63c6c.chunk.css",
-    "static/js/main.65a6a458.chunk.js"
+    "static/css/main.13b68065.chunk.css",
+    "static/js/main.54ad2968.chunk.js"
   ]
 }

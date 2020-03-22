@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aafc43c4e0430e9d40f25a1a25fb7b6b",
+    "revision": "deb44599ffc4c74d830a187b1fa4bb7f",
     "url": "/ReactCV/index.html"
   },
   {
-    "revision": "27f209209af6ad953045",
+    "revision": "c695174be6f11e1a9c40",
     "url": "/ReactCV/static/css/main.a3f95bd1.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/js/2.aa32fe12.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "27f209209af6ad953045",
-    "url": "/ReactCV/static/js/main.7e9e94ab.chunk.js"
+    "revision": "c695174be6f11e1a9c40",
+    "url": "/ReactCV/static/js/main.f4833223.chunk.js"
   },
   {
     "revision": "fc8d51ed7847afbc570a",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/media/Shopify.a3045544.jpg"
   },
   {
-    "revision": "0522e954f522ca3b5a982f5aaba79ccc",
-    "url": "/ReactCV/static/media/adam.0522e954.jpg"
+    "revision": "15c1b2db45fe61663753942c3bfed613",
+    "url": "/ReactCV/static/media/adam-min.15c1b2db.jpg"
   },
   {
     "revision": "4c211ff8852df7a9ec3e439e27aa1301",
@@ -56,16 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/media/frame-perspective.1a08480b.png"
   },
   {
-    "revision": "ee94973c0b83c76c5f6beb6426df7a23",
-    "url": "/ReactCV/static/media/kiss.ee94973c.jpg"
+    "revision": "6f2febe7662b7ae4b217f8dfb0731d04",
+    "url": "/ReactCV/static/media/kiss-min.6f2febe7.jpg"
   },
   {
     "revision": "6c106e7a410ad6bd74baf36aa89670c8",
     "url": "/ReactCV/static/media/man.6c106e7a.png"
   },
   {
-    "revision": "e3d85a4ffe2452c8ff2fc1421d9a4c3d",
-    "url": "/ReactCV/static/media/mona.e3d85a4f.jpg"
+    "revision": "d8c5fcc766601532e0dac86d2dfc4027",
+    "url": "/ReactCV/static/media/mona-min.d8c5fcc7.jpg"
   },
   {
     "revision": "dd7c49a1313464c0c21987d9c9f81614",
@@ -84,15 +84,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/media/react-icon.05e9a1f4.svg"
   },
   {
-    "revision": "88d8eddab22a7640d8f2dc3066a919ff",
-    "url": "/ReactCV/static/media/starry.88d8edda.jpg"
+    "revision": "88b441a144b5acc4bc2dd231eeed686a",
+    "url": "/ReactCV/static/media/starry-min.88b441a1.jpg"
   },
   {
-    "revision": "6338e1752f477a1ee4a482a54dc50748",
-    "url": "/ReactCV/static/media/supper.6338e175.jpg"
+    "revision": "5aba26020faf702e9c24a5f1812f3d83",
+    "url": "/ReactCV/static/media/supper-min.5aba2602.jpg"
   },
   {
-    "revision": "391a2aed6d63b2058bc7570107038857",
-    "url": "/ReactCV/static/media/venus.391a2aed.jpg"
+    "revision": "a87c6a047965d3d22561c6c4c4b33486",
+    "url": "/ReactCV/static/media/venus-min.a87c6a04.jpg"
   }
 ]);

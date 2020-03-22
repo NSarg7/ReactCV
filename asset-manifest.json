@@ -1,39 +1,39 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.a3f95bd1.chunk.css",
-    "main.js": "/ReactCV/static/js/main.7e9e94ab.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.7e9e94ab.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.f4833223.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.f4833223.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.d22b4e63.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.d22b4e63.js.map",
     "static/js/2.aa32fe12.chunk.js": "/ReactCV/static/js/2.aa32fe12.chunk.js",
     "static/js/2.aa32fe12.chunk.js.map": "/ReactCV/static/js/2.aa32fe12.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.83325c826ba51d68697577f96500f295.js": "/ReactCV/precache-manifest.83325c826ba51d68697577f96500f295.js",
+    "precache-manifest.f558e8242e4c5997fd9263be858fe5f1.js": "/ReactCV/precache-manifest.f558e8242e4c5997fd9263be858fe5f1.js",
     "service-worker.js": "/ReactCV/service-worker.js",
     "static/css/main.a3f95bd1.chunk.css.map": "/ReactCV/static/css/main.a3f95bd1.chunk.css.map",
     "static/js/2.aa32fe12.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.aa32fe12.chunk.js.LICENSE.txt",
     "static/media/15Puzzle.jpg": "/ReactCV/static/media/15Puzzle.29fb182b.jpg",
     "static/media/PM.jpg": "/ReactCV/static/media/PM.f0bd199b.jpg",
     "static/media/Shopify.jpg": "/ReactCV/static/media/Shopify.a3045544.jpg",
-    "static/media/adam.jpg": "/ReactCV/static/media/adam.0522e954.jpg",
+    "static/media/adam-min.jpg": "/ReactCV/static/media/adam-min.15c1b2db.jpg",
     "static/media/main.scss": "/ReactCV/static/media/frame-perspective.1a08480b.png",
     "static/media/checkmate-checker.jpg": "/ReactCV/static/media/checkmate-checker.7c7f05e5.jpg",
     "static/media/engraved-back.png": "/ReactCV/static/media/engraved-back.ca3edfbf.png",
-    "static/media/kiss.jpg": "/ReactCV/static/media/kiss.ee94973c.jpg",
+    "static/media/kiss-min.jpg": "/ReactCV/static/media/kiss-min.6f2febe7.jpg",
     "static/media/man.png": "/ReactCV/static/media/man.6c106e7a.png",
-    "static/media/mona.jpg": "/ReactCV/static/media/mona.e3d85a4f.jpg",
+    "static/media/mona-min.jpg": "/ReactCV/static/media/mona-min.d8c5fcc7.jpg",
     "static/media/natours.jpg": "/ReactCV/static/media/natours.dd7c49a1.jpg",
     "static/media/omnifood.jpg": "/ReactCV/static/media/omnifood.2bcc597a.jpg",
     "static/media/pizza-maker.jpg": "/ReactCV/static/media/pizza-maker.b088fa9d.jpg",
     "static/media/main_query.scss": "/ReactCV/static/media/react-icon.05e9a1f4.svg",
-    "static/media/starry.jpg": "/ReactCV/static/media/starry.88d8edda.jpg",
-    "static/media/supper.jpg": "/ReactCV/static/media/supper.6338e175.jpg",
-    "static/media/venus.jpg": "/ReactCV/static/media/venus.391a2aed.jpg"
+    "static/media/starry-min.jpg": "/ReactCV/static/media/starry-min.88b441a1.jpg",
+    "static/media/supper-min.jpg": "/ReactCV/static/media/supper-min.5aba2602.jpg",
+    "static/media/venus-min.jpg": "/ReactCV/static/media/venus-min.a87c6a04.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d22b4e63.js",
     "static/js/2.aa32fe12.chunk.js",
     "static/css/main.a3f95bd1.chunk.css",
-    "static/js/main.7e9e94ab.chunk.js"
+    "static/js/main.f4833223.chunk.js"
   ]
 }

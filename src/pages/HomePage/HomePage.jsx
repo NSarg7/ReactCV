@@ -21,12 +21,12 @@ const HomePage = () => {
 	const [eploreMoreActive, seteploreMoreActive] = useState(false);
 
 	const gallery = [
-		{ name: "The Creation of Adam", img: require("../../sass/assets/gallery/adam.jpg") },
-		{ name: "The Last Supper", img: require("../../sass/assets/gallery/supper.jpg") },
-		{ name: "The Kiss", img: require("../../sass/assets/gallery/kiss.jpg") },
-		{ name: "Mona Liza", img: require("../../sass/assets/gallery/mona.jpg") },
-		{ name: "The Starry Night", img: require("../../sass/assets/gallery/starry.jpg") },
-		{ name: "The Birth of Venus", img: require("../../sass/assets/gallery/venus.jpg") },
+		{ name: "The Creation of Adam", img: require("../../assets/gallery/adam.jpg") },
+		{ name: "The Last Supper", img: require("../../assets/gallery/supper.jpg") },
+		{ name: "The Kiss", img: require("../../assets/gallery/kiss.jpg") },
+		{ name: "Mona Liza", img: require("../../assets/gallery/mona.jpg") },
+		{ name: "The Starry Night", img: require("../../assets/gallery/starry.jpg") },
+		{ name: "The Birth of Venus", img: require("../../assets/gallery/venus.jpg") },
 	];
 
 	const string = "Art is the beginning of everything";

@@ -5,16 +5,17 @@ import SliderItem from './SliderItem/SliderItem';
 import { SliderOverlay, SliderContainer } from './Slider.styled';
 
 const Slider = ({ content, transition }) => {
-    const sliderItems = Array(3).fill([...content]).flat(10);
-
+    const sliderItems = Array(3)
+        .fill([...content])
+        .flat(10);
     const sliderContainerRef = useRef(null);
     const isOdd = sliderItems.length % 2;
 
-    const [count, setCount] = useState(0);
-    const [slideWidth, setSlideWidth] = useState(0);
-    const [sliderPositionStart, setSliderPositionStart] = useState(0);
-    const [sliderPosition, setSliderPosition] = useState(isOdd ? slideWidth / 2 : 0);
-    const [transitionTime, setTransitionTime] = useState(transition);
+    const [count, setCount] = useState();
+    const [slideWidth, setSlideWidth] = useState();
+    const [sliderInitialPosition, setSliderInitialPosition] = useState();
+    const [sliderPosition, setSliderPosition] = useState();
+    const [transitionTime, setTransitionTime] = useState();
     const [clickIsActive, setClickIsActive] = useState(true);
 
     // MOUSE TRANSLATE EVENTS
@@ -28,23 +29,22 @@ const Slider = ({ content, transition }) => {
 
     useEffect(() => {
         let sliderContainerDOM = sliderContainerRef.current;
-        const sliderContainerDOMWidthString = getComputedStyle(sliderContainerDOM).getPropertyValue('width');
-        let sliderContainerDOMWidth = parseFloat(sliderContainerDOMWidthString);
-        setSliderPositionStart(isOdd ? sliderContainerDOMWidth / 2 : 0);
-
         const handleSize = () => {
+            const sliderContainerDOMWidthString = getComputedStyle(sliderContainerDOM).getPropertyValue(
+                'width'
+            );
+            let sliderContainerDOMWidth = parseFloat(sliderContainerDOMWidthString);
+            const slidePosition = isOdd ? sliderContainerDOMWidth / 2 : 0;
+
             setSlideWidth(sliderContainerDOMWidth);
             setTransitionTime(0);
             setCount(0);
-            setSliderPosition(isOdd ? sliderContainerDOMWidth / 2 : 0);
-            setSliderPositionStart(isOdd ? sliderContainerDOMWidth / 2 : 0);
-            setTimeout(() => {
-                setTransitionTime(transition);
-            });
+            setSliderPosition(slidePosition);
+            setSliderInitialPosition(slidePosition);
         };
+        handleSize();
 
         window.addEventListener('resize', handleSize);
-        handleSize();
         return () => {
             window.removeEventListener('resize', handleSize);
         };
@@ -67,12 +67,11 @@ const Slider = ({ content, transition }) => {
     const transitionReset = () => {
         setTransitionTime(0);
         setCount(0);
-        setSliderPosition(sliderPositionStart);
+        setSliderPosition(sliderInitialPosition);
         setTimeout(() => {
             setTransitionTime(transition);
+            setClickIsActive(true);
         });
-
-        setClickIsActive(true);
     };
 
     /*----------------- FOR MOBILE DEVICES -----------------*/
@@ -118,6 +117,8 @@ const Slider = ({ content, transition }) => {
         setMouseTranslateSize(0);
     };
 
+    const translateSize = mouseTranslateSize ? sliderPosition + mouseTranslateSize : sliderPosition;
+
     return (
         <div
             className="Slider"
@@ -129,10 +130,7 @@ const Slider = ({ content, transition }) => {
             onMouseDown={mouseDownHandler}
             onMouseUp={mouseUpHundler}
             onMouseMove={mouseMoveActive ? mouseMoveHandler : null}
-            onMouseOut={mouseUpHundler}
-
-            /***************/
-        >
+            onMouseOut={mouseUpHundler}>
             <SliderOverlay>
                 <CustomIcon Styles="Slider__btn-prev" name="ios-arrow-back" onClick={btnPrev} />
                 <SliderContainer
@@ -144,11 +142,7 @@ const Slider = ({ content, transition }) => {
                             : setClickIsActive.bind(this, true)
                     }
                     transitionTime={transitionTime}
-                    style={{
-                        transform: ` translateX(${
-                            mouseTranslateSize ? sliderPosition + mouseTranslateSize : sliderPosition
-                        }px)`,
-                    }}>
+                    style={{ transform: ` translateX(${translateSize}px)` }}>
                     {sliderItems.map((project, idx) => {
                         return (
                             <SliderItem key={idx} url={project.img} name={project.name} link={project.link} />

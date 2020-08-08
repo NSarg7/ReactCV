@@ -12,7 +12,7 @@ const projects = [
         name: 'Natours',
         text: 'My next HTML/CSS project to master CSS3, Sass, Flexbox and grid.(ongoing)',
         img: require(`../assets/project-pics/natours.jpg`),
-        link: 'https://nsarg7.github.io/Natours/',
+        link: 'https://nsarg7.github.io/natours/',
     },
     {
         id: uniqid(),
@@ -20,7 +20,7 @@ const projects = [
         text:
             'This is my very first HTML/CSS project. Initially for animations were used jQuery, but recently I have changed it with Vanilla JS(pure JS). So it became super fast.',
         img: require(`../assets/project-pics/omnifood.jpg`),
-        link: 'https://nsarg7.github.io/Omnifood/',
+        link: 'https://nsarg7.github.io/omnifood/',
     },
     {
         id: uniqid(),

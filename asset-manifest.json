@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ReactCV/static/css/main.a3f95bd1.chunk.css",
-    "main.js": "/ReactCV/static/js/main.539c670a.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.539c670a.chunk.js.map",
-    "runtime-main.js": "/ReactCV/static/js/runtime-main.d22b4e63.js",
-    "runtime-main.js.map": "/ReactCV/static/js/runtime-main.d22b4e63.js.map",
-    "static/js/2.4665ee5b.chunk.js": "/ReactCV/static/js/2.4665ee5b.chunk.js",
-    "static/js/2.4665ee5b.chunk.js.map": "/ReactCV/static/js/2.4665ee5b.chunk.js.map",
+    "main.css": "/ReactCV/static/css/main.a38f5d77.chunk.css",
+    "main.js": "/ReactCV/static/js/main.08756eea.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.08756eea.chunk.js.map",
+    "runtime-main.js": "/ReactCV/static/js/runtime-main.31b5bf70.js",
+    "runtime-main.js.map": "/ReactCV/static/js/runtime-main.31b5bf70.js.map",
+    "static/js/2.10ad907e.chunk.js": "/ReactCV/static/js/2.10ad907e.chunk.js",
+    "static/js/2.10ad907e.chunk.js.map": "/ReactCV/static/js/2.10ad907e.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.d1bad3b168c81e3948561a950d63f69d.js": "/ReactCV/precache-manifest.d1bad3b168c81e3948561a950d63f69d.js",
+    "precache-manifest.78f51241720c8cec413047d6bf36d16c.js": "/ReactCV/precache-manifest.78f51241720c8cec413047d6bf36d16c.js",
     "service-worker.js": "/ReactCV/service-worker.js",
-    "static/css/main.a3f95bd1.chunk.css.map": "/ReactCV/static/css/main.a3f95bd1.chunk.css.map",
-    "static/js/2.4665ee5b.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.4665ee5b.chunk.js.LICENSE.txt",
+    "static/css/main.a38f5d77.chunk.css.map": "/ReactCV/static/css/main.a38f5d77.chunk.css.map",
+    "static/js/2.10ad907e.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.10ad907e.chunk.js.LICENSE.txt",
     "static/media/15Puzzle.jpg": "/ReactCV/static/media/15Puzzle.29fb182b.jpg",
     "static/media/PM.jpg": "/ReactCV/static/media/PM.f0bd199b.jpg",
     "static/media/Shopify.jpg": "/ReactCV/static/media/Shopify.a3045544.jpg",
@@ -31,9 +31,9 @@
     "static/media/venus-min.jpg": "/ReactCV/static/media/venus-min.a87c6a04.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d22b4e63.js",
-    "static/js/2.4665ee5b.chunk.js",
-    "static/css/main.a3f95bd1.chunk.css",
-    "static/js/main.539c670a.chunk.js"
+    "static/js/runtime-main.31b5bf70.js",
+    "static/js/2.10ad907e.chunk.js",
+    "static/css/main.a38f5d77.chunk.css",
+    "static/js/main.08756eea.chunk.js"
   ]
 }

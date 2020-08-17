@@ -1,21 +1,21 @@
-import React, { useState, useRef, useEffect } from 'react';
-import CustomIcon from '../CustomIcon/CustomIcon';
-import SliderItem from './SliderItem/SliderItem';
+import React, { useState, createRef, useEffect } from "react";
+import CustomIcon from "../CustomIcon/CustomIcon";
+import SliderItem from "./SliderItem/SliderItem";
 
-import { SliderOverlay, SliderContainer } from './Slider.styled';
+import { SliderOverlay, SliderContainer } from "./Slider.styled";
 
+const sliderContainerRef = createRef();
 const Slider = ({ content, transition }) => {
     const sliderItems = Array(3)
         .fill([...content])
         .flat(10);
-    const sliderContainerRef = useRef(null);
     const isOdd = sliderItems.length % 2;
 
     const [count, setCount] = useState();
     const [slideWidth, setSlideWidth] = useState();
     const [sliderInitialPosition, setSliderInitialPosition] = useState();
     const [sliderPosition, setSliderPosition] = useState();
-    const [transitionTime, setTransitionTime] = useState();
+    const [transitionTime, setTransitionTime] = useState(transition);
     const [clickIsActive, setClickIsActive] = useState(true);
 
     // MOUSE TRANSLATE EVENTS
@@ -24,29 +24,29 @@ const Slider = ({ content, transition }) => {
     const [mouseTranslateSize, setMouseTranslateSize] = useState();
 
     // Touch events
-    const [touchStartClient, setTouchStartClient] = useState();
-    const [curTouchPosition, setCurTouchPosition] = useState();
+    const [touchStartPosition, setTouchStartPosition] = useState();
 
     useEffect(() => {
-        let sliderContainerDOM = sliderContainerRef.current;
+        const sliderContainerDOM = sliderContainerRef.current;
         const handleSize = () => {
             const sliderContainerDOMWidthString = getComputedStyle(sliderContainerDOM).getPropertyValue(
-                'width'
+                "width"
             );
-            let sliderContainerDOMWidth = parseFloat(sliderContainerDOMWidthString);
+            const sliderContainerDOMWidth = parseFloat(sliderContainerDOMWidthString);
             const slidePosition = isOdd ? sliderContainerDOMWidth / 2 : 0;
 
             setSlideWidth(sliderContainerDOMWidth);
-            setTransitionTime(0);
+            // setTransitionTime(0);
             setCount(0);
             setSliderPosition(slidePosition);
             setSliderInitialPosition(slidePosition);
+            setClickIsActive(true);
         };
         handleSize();
 
-        window.addEventListener('resize', handleSize);
+        window.addEventListener("resize", handleSize);
         return () => {
-            window.removeEventListener('resize', handleSize);
+            window.removeEventListener("resize", handleSize);
         };
     }, [transition, isOdd]);
 
@@ -77,43 +77,34 @@ const Slider = ({ content, transition }) => {
     /*----------------- FOR MOBILE DEVICES -----------------*/
 
     // TOUCH EVENTS
-    const touchMove = (event) => {
-        setTouchStartClient(event.touches[0].clientX);
+    const onTouchStart = (event) => {
+        setTouchStartPosition(event.touches[0].clientX);
     };
-    const touchStart = (event) => {
-        setCurTouchPosition(event.touches[0].clientX);
-    };
-    const touchEnd = () => {
-        if (touchStartClient < curTouchPosition) {
-            requestAnimationFrame(btnNext);
+    const onTouchEnd = (event) => {
+        const touchEndCords = event.changedTouches[0].clientX;
+
+        if (touchEndCords < touchStartPosition) {
+            btnNext();
         } else {
-            requestAnimationFrame(btnPrev);
+            btnPrev();
         }
     };
 
     // MOUSE EVENTS
     const mouseMoveHandler = (event) => {
-        // console.log(event.clientX - mouseDownClientX);
         const mouseTranslate = event.clientX - mouseDownClientX;
-        setMouseTranslateSize(mouseTranslate);
+        setMouseTranslateSize(() => mouseTranslate);
     };
     const mouseDownHandler = (event) => {
         setTransitionTime(0);
         setMouseMoveActive(true);
         setMouseDownClientX(event.clientX);
-        // console.log(event.clientX);
     };
-    const mouseUpHundler = (event) => {
+    const mouseUpHundler = () => {
         setMouseMoveActive(false);
         setTransitionTime(transition);
-        // console.log(event.clientX);
-        if (mouseTranslateSize > 0) {
-            requestAnimationFrame(btnPrev);
-        }
-        if (mouseTranslateSize < 0) {
-            requestAnimationFrame(btnNext);
-        }
-
+        if (mouseTranslateSize > 0) btnPrev();
+        if (mouseTranslateSize < 0) btnNext();
         setMouseTranslateSize(0);
     };
 
@@ -123,9 +114,8 @@ const Slider = ({ content, transition }) => {
         <div
             className="Slider"
             // SWIPE MOUSE EVENTS
-            onTouchStart={touchStart}
-            onTouchEnd={touchEnd}
-            onTouchMove={touchMove}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
             // DESKTOP MOUSE EVENTS
             onMouseDown={mouseDownHandler}
             onMouseUp={mouseUpHundler}

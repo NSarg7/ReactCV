@@ -1,20 +1,25 @@
 .MainContainer {
-	width: $main-width;
-	flex: 1;
-	align-self: center;
-	display: flex;
-	overflow: hidden;
+    max-width: $main-width;
+    min-width: 90%;
+    flex: 1;
+    align-self: center;
+    display: flex;
+    overflow: hidden;
+    padding: 0 2rem;
 
-	//Hide scrollbar
-	-ms-overflow-style: none;
-	&::-webkit-scrollbar {
-		display: none;
-	}
-	scrollbar-width: none;
+    //Hide scrollbar
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
 
-	& > div {
-		flex: 1 0;
-		animation: AnimatedContent 3s ease forwards;
-	}
-	
+    & > div {
+        flex: 1 0;
+        animation: AnimatedContent 3s ease forwards;
+    }
+
+    @include respond(600) {
+        width: 98%;
+    }
 }

@@ -18,6 +18,14 @@
         }
     }
 
+    @include respond(600) {
+        @keyframes scaleIn {
+            100% {
+                transform: scale(1) translateY(1.5rem);
+            }
+        }
+    }
+
     &__btn-prev,
     &__btn-next {
         z-index: 10;

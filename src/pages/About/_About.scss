@@ -1,58 +1,83 @@
-.About {
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	padding-bottom: 1rem;
+.about {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 1rem;
 
-	&_title {
-		flex: 0 0 auto;
-	}
+    &_title {
+    }
 
-	.blank {
-		flex: 1 1 auto;
-		margin: auto;
-		// width: 80%;
-		overflow-y: auto;
+    .blank {
+        flex: 1 1 auto;
+        margin: auto;
+        // width: 80%;
+        overflow-y: auto;
 
-		//Hide scrollbar
-		-ms-overflow-style: none;
-		&::-webkit-scrollbar {
-			display: none;
-		}
-		scrollbar-width: none;
+        //Hide scrollbar
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        scrollbar-width: none;
 
-		@include flexColumn;
-		.blank_top,
-		.blank_bottom {
-			padding: 2rem 3.5rem;
-			// box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
-			background-color: rgba(0, 0, 0, 0.3);
-			border-radius: 5px;
-		}
+        @include flexColumn;
+        .blank__top,
+        .blank__bottom {
+            padding: 2rem 3.5rem;
+            // box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
 
-		.blank_top {
-			@include flexCenter;
-			margin-bottom: 2rem;
-			div:first-child {
-				margin-right: 5%;
-			}
+        .blank__top {
+            margin-bottom: 2rem;
+            @include flexCenter;
 
-			.grid-block {
-				display: grid;
-				grid-template-columns: 1fr 3fr;
-				grid-template-rows: repeat(4, 1fr);
-				row-gap: 1rem;
-				column-gap: 5rem;
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                gap: 5rem;
+            }
 
-				&--links {
-					grid-row: 1/5;
-				}
-			}
-		}
+            .grid-block {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem 5rem;
+                white-space: pre;
 
-		.blank_bottom {
-			line-height: 2.5rem;
-			font-size: 1.7rem;
-		}
-	}
+                &--links {
+                    grid-row: 1/5;
+                }
+
+                @include respond(600) {
+                    gap: 2rem;
+                }
+            }
+        }
+
+        .blank__bottom {
+            line-height: 2.5rem;
+            font-size: 1.7rem;
+
+            .row-content {
+                display: grid;
+                grid-template-columns: 1fr 5fr;
+                gap: 1fr 2rem;
+                margin-bottom: 2rem;
+
+                @include respond(1200) {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            .courses {
+                .course-name {
+                    display: grid;
+                    grid-template-columns: min-content 1fr;
+                    gap: 2rem;
+                }
+            }
+        }
+    }
 }

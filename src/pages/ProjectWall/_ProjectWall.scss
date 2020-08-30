@@ -1,60 +1,69 @@
 .ProjectWall {
-	opacity: 0;
-	visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 
-	flex: 1;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-	&__intro {
-		flex: 0;
-		margin-bottom: 3rem;
-	}
+    &__intro {
+        flex: 0;
+        margin-bottom: 3rem;
+    }
 
-	&__title {
-		animation-duration: $start-animation-duration-2;
-		opacity: 0;
-	}
+    &__title {
+        animation-duration: $start-animation-duration-2;
+        opacity: 0;
+    }
 
-	&__description {
-		width: 60%;
-		margin: 0 auto;
-		opacity: 0;
-		animation-delay: $animation-delay-1;
-		animation-duration: $start-animation-duration-2;
-	}
+    &__description {
+        width: 60%;
+        margin: 0 auto;
+        opacity: 0;
+        animation-delay: $animation-delay-1;
+        animation-duration: $start-animation-duration-2;
 
-	&__engraving {
-		filter: grayscale(0.7);
-		opacity: 0.1;
-		z-index: -1;
-		position: absolute;
-		bottom: 22%;
-		left: 50%;
-		transform: translateX(-50%);
-		height: 25rem;
-		width: auto;
-		visibility: hidden;
-	}
+        @include respond(900) {
+            margin-bottom: 2rem;
+            width: 90%;
+        }
+    }
 
-	&__man {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		height: 50%;
-		width: auto;
-		transition: 1s;
-		// display: none; //!
-		animation: hideMan 1.5s ease forwards;
-		animation-delay: $animation-delay-3;
-		@keyframes hideMan {
-			100% {
-				opacity: 0;
-				visibility: hidden;
-			}
-		}
-	}
+    &__engraving {
+        filter: grayscale(0.7);
+        opacity: 0.1;
+        z-index: -1;
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 25rem;
+        width: auto;
+        visibility: hidden;
+
+        @include respond(600) {
+            visibility: visible;
+        }
+    }
+
+    &__man {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50%;
+        width: auto;
+        transition: 1s;
+        // display: none; //!
+        animation: hideMan 1.5s ease forwards;
+        animation-delay: $animation-delay-3;
+        @keyframes hideMan {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
 }

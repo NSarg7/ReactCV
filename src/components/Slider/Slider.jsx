@@ -83,11 +83,8 @@ const Slider = ({ content, transition }) => {
     const onTouchEnd = (event) => {
         const touchEndCords = event.changedTouches[0].clientX;
 
-        if (touchEndCords < touchStartPosition) {
-            btnNext();
-        } else {
-            btnPrev();
-        }
+        if (touchEndCords < touchStartPosition) btnNext();
+        if (touchEndCords > touchStartPosition) btnPrev();
     };
 
     // MOUSE EVENTS

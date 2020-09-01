@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/ReactCV/static/css/main.799d4782.chunk.css",
-    "main.js": "/ReactCV/static/js/main.96299f54.chunk.js",
-    "main.js.map": "/ReactCV/static/js/main.96299f54.chunk.js.map",
+    "main.js": "/ReactCV/static/js/main.210c9cd4.chunk.js",
+    "main.js.map": "/ReactCV/static/js/main.210c9cd4.chunk.js.map",
     "runtime-main.js": "/ReactCV/static/js/runtime-main.31b5bf70.js",
     "runtime-main.js.map": "/ReactCV/static/js/runtime-main.31b5bf70.js.map",
-    "static/js/2.bf9a3a47.chunk.js": "/ReactCV/static/js/2.bf9a3a47.chunk.js",
-    "static/js/2.bf9a3a47.chunk.js.map": "/ReactCV/static/js/2.bf9a3a47.chunk.js.map",
+    "static/js/2.6113a54f.chunk.js": "/ReactCV/static/js/2.6113a54f.chunk.js",
+    "static/js/2.6113a54f.chunk.js.map": "/ReactCV/static/js/2.6113a54f.chunk.js.map",
     "index.html": "/ReactCV/index.html",
-    "precache-manifest.b4a297994d8a240fb95005e5523421b0.js": "/ReactCV/precache-manifest.b4a297994d8a240fb95005e5523421b0.js",
+    "precache-manifest.a37dba55159039690fe51f65e3228b74.js": "/ReactCV/precache-manifest.a37dba55159039690fe51f65e3228b74.js",
     "service-worker.js": "/ReactCV/service-worker.js",
     "static/css/main.799d4782.chunk.css.map": "/ReactCV/static/css/main.799d4782.chunk.css.map",
-    "static/js/2.bf9a3a47.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.bf9a3a47.chunk.js.LICENSE.txt",
+    "static/js/2.6113a54f.chunk.js.LICENSE.txt": "/ReactCV/static/js/2.6113a54f.chunk.js.LICENSE.txt",
     "static/media/15Puzzle.jpg": "/ReactCV/static/media/15Puzzle.29fb182b.jpg",
     "static/media/PM.jpg": "/ReactCV/static/media/PM.f0bd199b.jpg",
     "static/media/Shopify.jpg": "/ReactCV/static/media/Shopify.a3045544.jpg",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.31b5bf70.js",
-    "static/js/2.bf9a3a47.chunk.js",
+    "static/js/2.6113a54f.chunk.js",
     "static/css/main.799d4782.chunk.css",
-    "static/js/main.96299f54.chunk.js"
+    "static/js/main.210c9cd4.chunk.js"
   ]
 }

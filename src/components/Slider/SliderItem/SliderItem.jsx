@@ -1,5 +1,5 @@
-import React from 'react';
-import { SliderItemOverlay, ProjectLabel } from './SliderItem.styled';
+import React from "react";
+import { SliderItemOverlay, ProjectLabel, ProjectLabelWrapper } from "./SliderItem.styled";
 
 const SliderItem = ({ url, name, link }) => {
     const handleDrag = (event) => {
@@ -13,7 +13,9 @@ const SliderItem = ({ url, name, link }) => {
             url={url}
             className="SliderItem"
             onDragStart={handleDrag}>
-            <ProjectLabel>{name}</ProjectLabel>
+            <ProjectLabelWrapper>
+                <ProjectLabel>{name}</ProjectLabel>
+            </ProjectLabelWrapper>
         </SliderItemOverlay>
     );
 };

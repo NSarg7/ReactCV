@@ -19,6 +19,8 @@
     }
 
     @include respond(600) {
+        width: 70rem;
+        height: calc(70rem / 2.05);
         @keyframes scaleIn {
             100% {
                 transform: scale(1) translateY(1.5rem);

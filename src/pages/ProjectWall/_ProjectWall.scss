@@ -8,6 +8,10 @@
     flex-direction: column;
     align-items: center;
 
+    // @include respond(600) {
+    //     margin-top: 3rem;
+    // }
+
     &__intro {
         flex: 0;
         margin-bottom: 3rem;

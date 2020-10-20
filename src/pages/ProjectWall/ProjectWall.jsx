@@ -6,7 +6,7 @@ import EngravedPic from '../../assets/workbench/engraved-back.png';
 
 // COMPONENTS
 import Slider from '../../components/Slider/Slider';
-import projects from '../../App/data';
+import projects from './data/data';
 
 const ProjectWall = () => {
     return (

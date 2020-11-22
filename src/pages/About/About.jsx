@@ -65,7 +65,7 @@ const About = () => {
                             </p>
                             <p className="course-name">
                                 <span>Udemy:</span>
-                                <span>“The Complete React Developer in 2019 (w Redux, Hooks, GraphQL)”</span>
+                                <span>“The Complete React Developer in 2020 (w Redux, Hooks, GraphQL)”</span>
                             </p>
                             <label>Also, waste my time in</label>
                             <p>YSU, “Bachelor's degree in International Relations”</p>
@@ -79,8 +79,6 @@ const About = () => {
                         <div>
                             <p>AIST GLOBAL – ReactJS Developer</p>
                             <p>Rumors Monitoring – Web programmer (contract deal)</p>
-                            <p>MobileCentreArt LLC - Store Manager</p>
-                            <p>Ministry of economy of the RA – Intern</p>
                         </div>
                     </div>
                     <div className="row-content">

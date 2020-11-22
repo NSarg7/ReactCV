@@ -22,18 +22,18 @@ const projects = [
     },
     {
         id: 4,
-        name: "Pizza maker",
-        text: "You make, we bake.",
-        img: require(`assets/project-pics/pizza-maker.jpg`),
-        link: "https://nsarg7.github.io/pizza-maker",
-    },
-    {
-        id: 5,
         name: "15Puzzle",
         text:
             "15Puzzle - My next project, created by React.js. It's a very popular logic game. Maybe you played it in your childhood. Let's play again and feel nostalgic.",
         img: require(`assets/project-pics/15Puzzle.jpg`),
         link: "https://nsarg7.github.io/15Puzzle/",
+    },
+    {
+        id: 5,
+        name: "Pizza maker",
+        text: "You make, we bake.",
+        img: require(`assets/project-pics/pizza-maker.jpg`),
+        link: "https://nsarg7.github.io/pizza-maker",
     },
     {
         id: 6,

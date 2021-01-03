@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "840871654b56bf559625a5476e1c445d",
+    "revision": "070c70f3d7e66591d545a8d077163e39",
     "url": "/ReactCV/index.html"
   },
   {
-    "revision": "16325da4840b06d5fb77",
+    "revision": "46afd9f2c557b91248df",
     "url": "/ReactCV/static/css/main.799d4782.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCV/static/js/2.6113a54f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "16325da4840b06d5fb77",
-    "url": "/ReactCV/static/js/main.66a9257b.chunk.js"
+    "revision": "46afd9f2c557b91248df",
+    "url": "/ReactCV/static/js/main.ff1ce7f9.chunk.js"
   },
   {
     "revision": "4a2fd15c20cf6429be6a",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29fb182b54a49487e9b1cf62c9ee7f19",
     "url": "/ReactCV/static/media/15Puzzle.29fb182b.jpg"
-  },
-  {
-    "revision": "f0bd199b149874d18f97ea568ce9385a",
-    "url": "/ReactCV/static/media/PM.f0bd199b.jpg"
   },
   {
     "revision": "a3045544706da63faff8c8d21300931a",
